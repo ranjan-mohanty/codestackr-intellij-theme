@@ -130,7 +130,11 @@ For detailed publishing instructions, see the [IntelliJ Platform Plugin Publishi
 
 ## Screenshots
 
-Coming soon
+### Regular Theme
+![codeSTACKr Theme Regular](screenshots/screenshot-regular.png)
+
+### Muted Theme
+![codeSTACKr Theme Muted](screenshots/screenshot-muted.png)
 
 ## Contributing
 
