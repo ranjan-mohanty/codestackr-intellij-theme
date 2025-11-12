@@ -1,0 +1,36 @@
+<idea-plugin>
+    <id>com.codestackr.theme</id>
+    <name>codeSTACKr Theme</name>
+    <vendor email="support@codestackr.com" url="https://github.com/codestackr">codeSTACKr</vendor>
+
+    <description><![CDATA[
+    <h1>codeSTACKr Theme for IntelliJ</h1>
+    <p>A beautiful dark theme with vibrant colors, perfect for long coding sessions.</p>
+    <p>This theme features:</p>
+    <ul>
+        <li>Deep dark background (#09131b) for reduced eye strain</li>
+        <li>Vibrant syntax highlighting with carefully chosen colors</li>
+        <li>Two variants: Regular and Muted for different preferences</li>
+        <li>Optimized for Java, Kotlin, JavaScript, TypeScript, Python, and more</li>
+    </ul>
+    <p>Never stop learning and Never give up!</p>
+    <p>Based on the popular VS Code theme by codeSTACKr.</p>
+    ]]></description>
+
+    <change-notes><![CDATA[
+    <h2>1.0.0</h2>
+    <ul>
+        <li>Initial release</li>
+        <li>Two theme variants: Regular and Muted</li>
+        <li>Full syntax highlighting support</li>
+        <li>Optimized UI colors</li>
+    </ul>
+    ]]></change-notes>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <themeProvider id="com.codestackr.theme" path="/themes/codestackr-theme.theme.json"/>
+        <themeProvider id="com.codestackr.theme.muted" path="/themes/codestackr-theme-muted.theme.json"/>
+    </extensions>
+</idea-plugin>
