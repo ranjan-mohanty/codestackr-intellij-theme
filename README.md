@@ -24,7 +24,7 @@ A beautiful dark theme for IntelliJ IDEA and other JetBrains IDEs, based on the 
 
 ### Manual Installation
 
-1. Download the latest release from the [releases page](https://github.com/codestackr/codestackr-intellij-theme/releases)
+1. Download the latest release from the [releases page](https://github.com/ranjan-mohanty/codestackr-intellij-theme/releases)
 2. Open IntelliJ IDEA
 3. Go to `Settings/Preferences` → `Plugins`
 4. Click the gear icon and select `Install Plugin from Disk...`
@@ -80,7 +80,7 @@ A softer variant with more muted colors, ideal for extended coding sessions and 
 
 ```bash
 # Clone the repository
-git clone https://github.com/codestackr/codestackr-intellij-theme.git
+git clone https://github.com/ranjan-mohanty/codestackr-intellij-theme.git
 cd codestackr-intellij-theme
 
 # Build the plugin
@@ -153,8 +153,8 @@ MIT License - see [LICENSE](LICENSE) file for details
 
 ## Support
 
-- 🐛 [Report a bug](https://github.com/codestackr/codestackr-intellij-theme/issues)
-- 💡 [Request a feature](https://github.com/codestackr/codestackr-intellij-theme/issues)
+- 🐛 [Report a bug](https://github.com/ranjan-mohanty/codestackr-intellij-theme/issues)
+- 💡 [Request a feature](https://github.com/ranjan-mohanty/codestackr-intellij-theme/issues)
 - ⭐ Star this repo if you like it!
 
 ## Links

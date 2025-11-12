@@ -121,7 +121,7 @@ Enhancement suggestions are tracked as GitHub issues.
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/codestackr/codestackr-intellij-theme.git
+   git clone https://github.com/ranjan-mohanty/codestackr-intellij-theme.git
    cd codestackr-intellij-theme
    ```
 
@@ -282,8 +282,8 @@ We follow [Semantic Versioning](https://semver.org/):
 ## Getting Help
 
 - 📖 Read the [documentation](README.md)
-- 💬 Join [discussions](https://github.com/codestackr/codestackr-intellij-theme/discussions)
-- 🐛 Check [existing issues](https://github.com/codestackr/codestackr-intellij-theme/issues)
+- 💬 Join [discussions](https://github.com/ranjan-mohanty/codestackr-intellij-theme/discussions)
+- 🐛 Check [existing issues](https://github.com/ranjan-mohanty/codestackr-intellij-theme/issues)
 - 📧 Contact maintainers
 
 ## Recognition

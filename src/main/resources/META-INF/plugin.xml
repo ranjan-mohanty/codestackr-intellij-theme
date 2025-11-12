@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>com.codestackr.theme</id>
     <name>codeSTACKr Theme</name>
-    <vendor email="support@codestackr.com" url="https://github.com/codestackr">codeSTACKr</vendor>
+    <vendor email="ranjan@duck.com" url="https://github.com/ranjan-mohanty">Ranjan Mohanty</vendor>
 
     <description><![CDATA[
     <h1>codeSTACKr Theme for IntelliJ</h1>
