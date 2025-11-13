@@ -161,6 +161,14 @@ For detailed publishing instructions, see the
 
 ![codeSTACKr Theme Muted](screenshots/screenshot-muted.png)
 
+### Light Theme
+
+![codeSTACKr Light](screenshots/screenshot-light.png)
+
+### High Contrast Theme
+
+![codeSTACKr High Contrast](screenshots/screenshot-high-contrast.png)
+
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
