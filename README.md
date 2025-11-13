@@ -43,31 +43,13 @@ The original vibrant color scheme with bold, saturated colors perfect for those 
 
 A softer variant with more muted colors, ideal for extended coding sessions and reduced eye strain.
 
-## Color Palette
+### codeSTACKr Theme (Light)
 
-### Regular Colors
+A light theme variant for daytime coding with carefully adjusted colors for optimal readability on white backgrounds.
 
-- Background: `#09131b`
-- Foreground: `#FFFFFF`
-- Accent: `#FF652F` (Orange)
-- Keywords: `#5eb7ee` (Blue)
-- Strings: `#14A76C` (Green)
-- Numbers: `#FFE400` (Yellow)
-- Functions: `#FFE400` (Yellow)
-- Classes: `#ff9d00` (Orange)
-- Comments: `#577997` (Gray-Blue)
+### codeSTACKr Theme (High Contrast)
 
-### Muted Colors
-
-- Background: `#09131b`
-- Foreground: `#FFFFFF`
-- Accent: `#ffb59a` (Soft Orange)
-- Keywords: `#bae0f8` (Light Blue)
-- Strings: `#8df1c9` (Mint Green)
-- Numbers: `#fff7ad` (Light Yellow)
-- Functions: `#fff7ad` (Light Yellow)
-- Classes: `#ffca75` (Light Orange)
-- Comments: `#577997` (Gray-Blue)
+A high contrast dark theme for better accessibility with maximum contrast between text and background.
 
 ## Building from Source
 

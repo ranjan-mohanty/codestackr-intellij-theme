@@ -5,7 +5,7 @@
 
     <description><![CDATA[
     <h1>codeSTACKr Theme for IntelliJ</h1>
-    <p>A beautiful dark theme with vibrant colors, perfect for long coding sessions.</p>
+    <p>A beautiful theme collection with vibrant colors, perfect for long coding sessions.</p>
     
     <h3>Regular Theme</h3>
     <img src="https://raw.githubusercontent.com/ranjan-mohanty/codestackr-intellij-theme/main/screenshots/screenshot-regular.png" alt="Regular Theme" width="700"/>
@@ -15,9 +15,10 @@
     
     <h2>Features</h2>
     <ul>
-        <li>Deep dark background (#09131b) for reduced eye strain</li>
+        <li>Four theme variants: Regular, Muted, Light, and High Contrast</li>
         <li>Vibrant syntax highlighting with carefully chosen colors</li>
-        <li>Two variants: Regular and Muted for different preferences</li>
+        <li>Light theme for daytime coding</li>
+        <li>High contrast theme for accessibility</li>
         <li>Optimized for Java, Kotlin, JavaScript, TypeScript, Python, and more</li>
     </ul>
     
@@ -26,6 +27,12 @@
     ]]></description>
 
     <change-notes><![CDATA[
+    <h2>1.1.0</h2>
+    <ul>
+        <li>Added Light theme variant for daytime coding</li>
+        <li>Added High Contrast theme for better accessibility</li>
+        <li>Now includes 4 theme variants: Regular, Muted, Light, and High Contrast</li>
+    </ul>
     <h2>1.0.0</h2>
     <ul>
         <li>Initial release</li>
@@ -40,5 +47,7 @@
     <extensions defaultExtensionNs="com.intellij">
         <themeProvider id="com.codestackr.theme" path="/themes/codestackr-theme.theme.json"/>
         <themeProvider id="com.codestackr.theme.muted" path="/themes/codestackr-theme-muted.theme.json"/>
+        <themeProvider id="com.codestackr.theme.light" path="/themes/codestackr-theme-light.theme.json"/>
+        <themeProvider id="com.codestackr.theme.highcontrast" path="/themes/codestackr-theme-high-contrast.theme.json"/>
     </extensions>
 </idea-plugin>
