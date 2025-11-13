@@ -12,30 +12,37 @@ We release patches for security vulnerabilities. Currently supported versions:
 
 ## Reporting a Vulnerability
 
-We take the security of codeSTACKr Theme seriously. If you believe you have found a security vulnerability, please report it to us as described below.
+We take the security of codeSTACKr Theme seriously. If you believe you have
+found a security vulnerability, please report it to us as described below.
 
-### Please do NOT:
+### Please do NOT
 
 - Open a public GitHub issue for security vulnerabilities
 - Disclose the vulnerability publicly before it has been addressed
 
-### Please DO:
+### Please DO
 
-1. **Email us directly** at ranjan@duck.com with:
+1. **Email us directly** at <ranjan@duck.com> with:
    - A description of the vulnerability
    - Steps to reproduce the issue
    - Potential impact
    - Any suggested fixes (if available)
 
-2. **Allow time for a fix**: We will acknowledge your email within 48 hours and will send a more detailed response within 7 days indicating the next steps in handling your report.
+2. **Allow time for a fix**: We will acknowledge your email within 48 hours and
+   will send a more detailed response within 7 days indicating the next steps in
+   handling your report.
 
-3. **Keep it confidential**: Please keep the vulnerability confidential until we've had a chance to address it.
+3. **Keep it confidential**: Please keep the vulnerability confidential until
+   we've had a chance to address it.
 
 ## What to Expect
 
-- **Acknowledgment**: We will acknowledge receipt of your vulnerability report within 48 hours.
-- **Updates**: We will keep you informed about the progress of fixing the vulnerability.
-- **Credit**: We will credit you in the release notes (unless you prefer to remain anonymous).
+- **Acknowledgment**: We will acknowledge receipt of your vulnerability report
+  within 48 hours.
+- **Updates**: We will keep you informed about the progress of fixing the
+  vulnerability.
+- **Credit**: We will credit you in the release notes (unless you prefer to
+  remain anonymous).
 - **Timeline**: We aim to release a fix within 30 days of the initial report.
 
 ## Security Update Process
@@ -62,7 +69,8 @@ This policy does NOT cover:
 
 ## Comments on This Policy
 
-If you have suggestions on how this process could be improved, please submit a pull request or open an issue.
+If you have suggestions on how this process could be improved, please submit a
+pull request or open an issue.
 
 ---
 

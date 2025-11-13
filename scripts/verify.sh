@@ -48,6 +48,8 @@ echo ""
 # Check plugin files
 echo "🔌 Plugin Files:"
 check_file "src/main/resources/META-INF/plugin.xml"
+check_file "src/main/resources/META-INF/pluginIcon.svg"
+check_file "src/main/resources/META-INF/pluginIcon_dark.svg"
 echo ""
 
 # Check theme files
@@ -56,6 +58,10 @@ check_file "src/main/resources/themes/codestackr-theme.theme.json"
 check_file "src/main/resources/themes/codestackr-theme.xml"
 check_file "src/main/resources/themes/codestackr-theme-muted.theme.json"
 check_file "src/main/resources/themes/codestackr-theme-muted.xml"
+check_file "src/main/resources/themes/codestackr-theme-light.theme.json"
+check_file "src/main/resources/themes/codestackr-theme-light.xml"
+check_file "src/main/resources/themes/codestackr-theme-high-contrast.theme.json"
+check_file "src/main/resources/themes/codestackr-theme-high-contrast.xml"
 echo ""
 
 # Check documentation
@@ -63,8 +69,16 @@ echo "📚 Documentation:"
 check_file "README.md"
 check_file "CHANGELOG.md"
 check_file "LICENSE"
-check_file "PUBLISHING.md"
-check_file "QUICKSTART.md"
+check_file "SECURITY.md"
+check_file "CONTRIBUTING.md"
+echo ""
+
+# Check scripts
+echo "🔧 Scripts:"
+check_dir "scripts"
+check_file "scripts/format.sh"
+check_file "scripts/verify.sh"
+check_file "Makefile"
 echo ""
 
 # Check JSON syntax
@@ -83,9 +97,9 @@ echo ""
 
 # Check XML syntax (basic check)
 echo "🔍 Checking XML files..."
-for file in src/main/resources/themes/*.xml; do
+for file in src/main/resources/themes/*.xml src/main/resources/META-INF/plugin.xml; do
     if [ -f "$file" ]; then
-        if grep -q "<?xml" "$file" && grep -q "</scheme>" "$file"; then
+        if grep -q "<?xml" "$file" 2>/dev/null || grep -q "<scheme" "$file" 2>/dev/null || grep -q "<idea-plugin" "$file" 2>/dev/null; then
             echo -e "${GREEN}✓${NC} $file - Valid XML structure"
         else
             echo -e "${YELLOW}⚠${NC} $file - XML structure warning"
@@ -95,12 +109,33 @@ for file in src/main/resources/themes/*.xml; do
 done
 echo ""
 
-# Check if gradlew is executable
+# Check if scripts are executable
+echo "🔍 Checking script permissions..."
+for script in scripts/*.sh; do
+    if [ -x "$script" ]; then
+        echo -e "${GREEN}✓${NC} $script is executable"
+    else
+        echo -e "${YELLOW}⚠${NC} $script is not executable (run: chmod +x $script)"
+        ((warnings++))
+    fi
+done
+
 if [ -x "gradlew" ]; then
     echo -e "${GREEN}✓${NC} gradlew is executable"
 else
     echo -e "${YELLOW}⚠${NC} gradlew is not executable (run: chmod +x gradlew)"
     ((warnings++))
+fi
+echo ""
+
+# Check theme count in plugin.xml
+echo "🔍 Verifying theme registration..."
+theme_count=$(grep -c "themeProvider" src/main/resources/META-INF/plugin.xml)
+if [ "$theme_count" -eq 4 ]; then
+    echo -e "${GREEN}✓${NC} All 4 themes registered in plugin.xml"
+else
+    echo -e "${RED}✗${NC} Expected 4 themes, found $theme_count in plugin.xml"
+    ((errors++))
 fi
 echo ""
 
@@ -110,10 +145,9 @@ if [ $errors -eq 0 ] && [ $warnings -eq 0 ]; then
     echo -e "${GREEN}✓ All checks passed!${NC}"
     echo ""
     echo "Next steps:"
-    echo "  1. Build the plugin: ./gradlew buildPlugin"
-    echo "  2. Test locally: ./gradlew runIde"
-    echo "  3. Verify plugin: ./gradlew verifyPlugin"
-    echo "  4. See PUBLISHING.md for marketplace publication"
+    echo "  • Build: make build or ./gradlew buildPlugin"
+    echo "  • Test: make run or ./gradlew runIde"
+    echo "  • Verify: ./gradlew verifyPlugin"
     exit 0
 elif [ $errors -eq 0 ]; then
     echo -e "${YELLOW}⚠ Verification completed with $warnings warning(s)${NC}"

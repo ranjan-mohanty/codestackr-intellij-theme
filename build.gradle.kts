@@ -37,4 +37,25 @@ tasks {
     publishPlugin {
         token.set(System.getenv("PUBLISH_TOKEN"))
     }
+
+    register("format") {
+        group = "formatting"
+        description = "Format markdown files"
+        doLast {
+            exec {
+                commandLine("sh", "scripts/format.sh")
+            }
+        }
+    }
+    
+    register("verify") {
+        group = "verification"
+        description = "Verify plugin and run checks"
+        dependsOn("verifyPlugin")
+        doLast {
+            exec {
+                commandLine("sh", "scripts/verify.sh")
+            }
+        }
+    }
 }

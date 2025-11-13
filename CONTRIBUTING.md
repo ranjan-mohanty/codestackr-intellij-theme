@@ -1,6 +1,7 @@
 # Contributing to codeSTACKr Theme
 
-Thank you for your interest in contributing! This document provides guidelines and instructions for contributing to the codeSTACKr IntelliJ Theme.
+Thank you for your interest in contributing! This document provides guidelines
+and instructions for contributing to the codeSTACKr IntelliJ Theme.
 
 ## Code of Conduct
 
@@ -31,18 +32,19 @@ Before creating bug reports, please check existing issues to avoid duplicates.
 ```markdown
 **Title:** Incorrect color for Java annotations
 
-**Description:**
-Java annotations are displayed in the wrong color in the Regular theme variant.
+**Description:** Java annotations are displayed in the wrong color in the
+Regular theme variant.
 
 **Steps to Reproduce:**
+
 1. Open a Java file
 2. Add an annotation like @Override
 3. Observe the color
 
-**Expected:** Yellow (#FFE400)
-**Actual:** Blue (#5eb7ee)
+**Expected:** Yellow (#FFE400) **Actual:** Blue (#5eb7ee)
 
 **Environment:**
+
 - IntelliJ IDEA 2023.2
 - Theme: codeSTACKr Theme (Regular)
 - OS: macOS 14.0
@@ -282,8 +284,10 @@ We follow [Semantic Versioning](https://semver.org/):
 ## Getting Help
 
 - 📖 Read the [documentation](README.md)
-- 💬 Join [discussions](https://github.com/ranjan-mohanty/codestackr-intellij-theme/discussions)
-- 🐛 Check [existing issues](https://github.com/ranjan-mohanty/codestackr-intellij-theme/issues)
+- 💬 Join
+  [discussions](https://github.com/ranjan-mohanty/codestackr-intellij-theme/discussions)
+- 🐛 Check
+  [existing issues](https://github.com/ranjan-mohanty/codestackr-intellij-theme/issues)
 - 📧 Contact maintainers
 
 ## Recognition
@@ -303,7 +307,8 @@ Contributors will be:
 
 ## License
 
-By contributing, you agree that your contributions will be licensed under the MIT License.
+By contributing, you agree that your contributions will be licensed under the
+MIT License.
 
 ---
 

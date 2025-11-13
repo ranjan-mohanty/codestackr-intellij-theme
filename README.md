@@ -1,13 +1,18 @@
 # codeSTACKr Theme for IntelliJ
 
-A beautiful dark theme for IntelliJ IDEA and other JetBrains IDEs, based on the popular [codeSTACKr VS Code theme](https://github.com/codestackr/codestackr-vscode-theme).
+A beautiful dark theme for IntelliJ IDEA and other JetBrains IDEs, based on the
+popular
+[codeSTACKr VS Code theme](https://github.com/codestackr/codestackr-vscode-theme).
 
 ## Features
 
-- **Deep Dark Background**: Easy on the eyes with a carefully chosen dark background (#09131b)
-- **Vibrant Syntax Highlighting**: Carefully selected colors for optimal code readability
+- **Deep Dark Background**: Easy on the eyes with a carefully chosen dark
+  background (#09131b)
+- **Vibrant Syntax Highlighting**: Carefully selected colors for optimal code
+  readability
 - **Two Variants**: Choose between Regular and Muted color schemes
-- **Wide Language Support**: Optimized for Java, Kotlin, JavaScript, TypeScript, Python, HTML, CSS, JSON, Markdown, SQL, and more
+- **Wide Language Support**: Optimized for Java, Kotlin, JavaScript, TypeScript,
+  Python, HTML, CSS, JSON, Markdown, SQL, and more
 - **Consistent UI**: Matching UI colors throughout the IDE
 
 ## Installation
@@ -20,11 +25,13 @@ A beautiful dark theme for IntelliJ IDEA and other JetBrains IDEs, based on the 
 4. Click `Install`
 5. Restart the IDE
 6. Go to `Settings/Preferences` → `Appearance & Behavior` → `Appearance`
-7. Select "codeSTACKr Theme" or "codeSTACKr Theme (Muted)" from the Theme dropdown
+7. Select "codeSTACKr Theme" or "codeSTACKr Theme (Muted)" from the Theme
+   dropdown
 
 ### Manual Installation
 
-1. Download the latest release from the [releases page](https://github.com/ranjan-mohanty/codestackr-intellij-theme/releases)
+1. Download the latest release from the
+   [releases page](https://github.com/ranjan-mohanty/codestackr-intellij-theme/releases)
 2. Open IntelliJ IDEA
 3. Go to `Settings/Preferences` → `Plugins`
 4. Click the gear icon and select `Install Plugin from Disk...`
@@ -37,19 +44,23 @@ A beautiful dark theme for IntelliJ IDEA and other JetBrains IDEs, based on the 
 
 ### codeSTACKr Theme (Regular)
 
-The original vibrant color scheme with bold, saturated colors perfect for those who prefer high contrast.
+The original vibrant color scheme with bold, saturated colors perfect for those
+who prefer high contrast.
 
 ### codeSTACKr Theme (Muted)
 
-A softer variant with more muted colors, ideal for extended coding sessions and reduced eye strain.
+A softer variant with more muted colors, ideal for extended coding sessions and
+reduced eye strain.
 
 ### codeSTACKr Theme (Light)
 
-A light theme variant for daytime coding with carefully adjusted colors for optimal readability on white backgrounds.
+A light theme variant for daytime coding with carefully adjusted colors for
+optimal readability on white backgrounds.
 
 ### codeSTACKr Theme (High Contrast)
 
-A high contrast dark theme for better accessibility with maximum contrast between text and background.
+A high contrast dark theme for better accessibility with maximum contrast
+between text and background.
 
 ## Building from Source
 
@@ -73,15 +84,42 @@ cd codestackr-intellij-theme
 
 ### Development
 
+#### Quick Commands (using Make)
+
 ```bash
-# Run IntelliJ IDEA with the plugin
-./gradlew runIde
+make help          # Show all available commands
+make build         # Build the plugin
+make test          # Run tests
+make verify        # Verify plugin
+make format        # Format markdown files
+make run           # Run IntelliJ with plugin
+make clean         # Clean build artifacts
+```
 
-# Run tests
-./gradlew test
+#### Using Gradle Directly
 
-# Verify plugin
-./gradlew verifyPlugin
+```bash
+./gradlew buildPlugin    # Build the plugin
+./gradlew runIde         # Run IntelliJ IDEA with the plugin
+./gradlew test           # Run tests
+./gradlew verifyPlugin   # Verify plugin structure
+./gradlew format         # Format markdown files
+./gradlew clean          # Clean build artifacts
+```
+
+#### Project Structure
+
+```text
+.
+├── scripts/              # Build and utility scripts
+│   ├── format.sh        # Format markdown files
+│   └── verify.sh        # Verify plugin
+├── src/
+│   └── main/resources/
+│       ├── META-INF/    # Plugin configuration
+│       └── themes/      # Theme files
+├── Makefile             # Convenient task runner
+└── build.gradle.kts     # Gradle build configuration
 ```
 
 ## Compatibility
@@ -94,7 +132,8 @@ cd codestackr-intellij-theme
 ### Publishing Prerequisites
 
 1. Create an account at [JetBrains Marketplace](https://plugins.jetbrains.com/)
-2. Generate a permanent token from your [JetBrains Account](https://plugins.jetbrains.com/author/me/tokens)
+2. Generate a permanent token from your
+   [JetBrains Account](https://plugins.jetbrains.com/author/me/tokens)
 
 ### Publish Steps
 
@@ -106,9 +145,11 @@ export PUBLISH_TOKEN="your-token-here"
 ./gradlew publishPlugin
 ```
 
-The plugin will be submitted for review. Approval typically takes 1-3 business days.
+The plugin will be submitted for review. Approval typically takes 1-3 business
+days.
 
-For detailed publishing instructions, see the [IntelliJ Platform Plugin Publishing Guide](https://plugins.jetbrains.com/docs/intellij/publishing-plugin.html).
+For detailed publishing instructions, see the
+[IntelliJ Platform Plugin Publishing Guide](https://plugins.jetbrains.com/docs/intellij/publishing-plugin.html).
 
 ## Screenshots
 
@@ -132,7 +173,8 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## Credits
 
-- Original VS Code theme by [Jesse Hall (codeSTACKr)](https://github.com/codestackr)
+- Original VS Code theme by
+  [Jesse Hall (codeSTACKr)](https://github.com/codestackr)
 - IntelliJ port created with ❤️ for the developer community
 
 ## License
@@ -141,8 +183,10 @@ MIT License - see [LICENSE](LICENSE) file for details
 
 ## Support
 
-- 🐛 [Report a bug](https://github.com/ranjan-mohanty/codestackr-intellij-theme/issues)
-- 💡 [Request a feature](https://github.com/ranjan-mohanty/codestackr-intellij-theme/issues)
+- 🐛
+  [Report a bug](https://github.com/ranjan-mohanty/codestackr-intellij-theme/issues)
+- 💡
+  [Request a feature](https://github.com/ranjan-mohanty/codestackr-intellij-theme/issues)
 - ⭐ Star this repo if you like it!
 
 ## Links
