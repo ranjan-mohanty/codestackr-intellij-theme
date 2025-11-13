@@ -45,7 +45,7 @@ A softer variant with more muted colors, ideal for extended coding sessions and 
 
 ## Color Palette
 
-### Regular Theme
+### Regular Colors
 
 - Background: `#09131b`
 - Foreground: `#FFFFFF`
@@ -57,7 +57,7 @@ A softer variant with more muted colors, ideal for extended coding sessions and 
 - Classes: `#ff9d00` (Orange)
 - Comments: `#577997` (Gray-Blue)
 
-### Muted Theme
+### Muted Colors
 
 - Background: `#09131b`
 - Foreground: `#FFFFFF`
@@ -131,9 +131,11 @@ For detailed publishing instructions, see the [IntelliJ Platform Plugin Publishi
 ## Screenshots
 
 ### Regular Theme
+
 ![codeSTACKr Theme Regular](screenshots/screenshot-regular.png)
 
 ### Muted Theme
+
 ![codeSTACKr Theme Muted](screenshots/screenshot-muted.png)
 
 ## Contributing
