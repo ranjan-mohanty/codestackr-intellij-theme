@@ -7,12 +7,6 @@
     <h1>codeSTACKr Theme for IntelliJ</h1>
     <p>A beautiful theme collection with vibrant colors, perfect for long coding sessions.</p>
     
-    <h3>Regular Theme</h3>
-    <img src="https://raw.githubusercontent.com/ranjan-mohanty/codestackr-intellij-theme/main/screenshots/screenshot-regular.png" alt="Regular Theme" width="700"/>
-    
-    <h3>Muted Theme</h3>
-    <img src="https://raw.githubusercontent.com/ranjan-mohanty/codestackr-intellij-theme/main/screenshots/screenshot-muted.png" alt="Muted Theme" width="700"/>
-    
     <h2>Features</h2>
     <ul>
         <li>Four theme variants: Regular, Muted, Light, and High Contrast</li>
