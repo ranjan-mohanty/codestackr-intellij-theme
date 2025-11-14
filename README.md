@@ -26,6 +26,10 @@ popular
   Python, HTML, CSS, JSON, Markdown, SQL, and more
 - **Consistent UI**: Matching UI colors throughout the IDE
 
+## Screenshots
+
+![Theme Showcase](screenshots/theme-showcase.gif)
+
 ## Installation
 
 ### From JetBrains Marketplace (Recommended)
@@ -53,25 +57,12 @@ popular
 
 ## Theme Variants
 
-### codeSTACKr Theme (Regular)
-
-The original vibrant color scheme with bold, saturated colors perfect for those
-who prefer high contrast.
-
-### codeSTACKr Theme (Muted)
-
-A softer variant with more muted colors, ideal for extended coding sessions and
-reduced eye strain.
-
-### codeSTACKr Theme (Light)
-
-A light theme variant for daytime coding with carefully adjusted colors for
-optimal readability on white backgrounds.
-
-### codeSTACKr Theme (High Contrast)
-
-A high contrast dark theme for better accessibility with maximum contrast
-between text and background.
+| Variant           | Description                                                                                           |
+| ----------------- | ----------------------------------------------------------------------------------------------------- |
+| **Regular**       | The original vibrant color scheme with bold, saturated colors perfect for those who prefer high contrast. |
+| **Muted**         | A softer variant with more muted colors, ideal for extended coding sessions and reduced eye strain.  |
+| **Light**         | A light theme variant for daytime coding with carefully adjusted colors for optimal readability on white backgrounds. |
+| **High Contrast** | A high contrast dark theme for better accessibility with maximum contrast between text and background. |
 
 ## Building from Source
 
@@ -118,21 +109,6 @@ make clean         # Clean build artifacts
 ./gradlew clean          # Clean build artifacts
 ```
 
-#### Project Structure
-
-```text
-.
-├── scripts/              # Build and utility scripts
-│   ├── format.sh        # Format markdown files
-│   └── verify.sh        # Verify plugin
-├── src/
-│   └── main/resources/
-│       ├── META-INF/    # Plugin configuration
-│       └── themes/      # Theme files
-├── Makefile             # Convenient task runner
-└── build.gradle.kts     # Gradle build configuration
-```
-
 ## Compatibility
 
 - IntelliJ IDEA 2023.2+
@@ -161,24 +137,6 @@ days.
 
 For detailed publishing instructions, see the
 [IntelliJ Platform Plugin Publishing Guide](https://plugins.jetbrains.com/docs/intellij/publishing-plugin.html).
-
-## Screenshots
-
-### Regular Theme
-
-![codeSTACKr Theme Regular](screenshots/screenshot-regular.png)
-
-### Muted Theme
-
-![codeSTACKr Theme Muted](screenshots/screenshot-muted.png)
-
-### Light Theme
-
-![codeSTACKr Light](screenshots/screenshot-light.png)
-
-### High Contrast Theme
-
-![codeSTACKr High Contrast](screenshots/screenshot-high-contrast.png)
 
 ## Contributing
 
