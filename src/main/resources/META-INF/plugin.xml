@@ -21,6 +21,11 @@
     ]]></description>
 
     <change-notes><![CDATA[
+    <h2>1.2.0</h2>
+    <ul>
+        <li>Extended compatibility: Now supports IntelliJ IDEA 2019.1 through all future versions</li>
+        <li>Improved stability and performance with latest platform updates</li>
+    </ul>
     <h2>1.1.0</h2>
     <ul>
         <li>Added Light theme variant for daytime coding</li>
