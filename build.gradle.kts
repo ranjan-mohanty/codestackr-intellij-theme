@@ -23,6 +23,9 @@ intellij {
 }
 
 tasks {
+    buildSearchableOptions {
+        enabled = false
+    }
     patchPluginXml {
         sinceBuild.set("232")
         untilBuild.set("")
@@ -38,24 +41,16 @@ tasks {
         token.set(System.getenv("PUBLISH_TOKEN"))
     }
 
-    register("format") {
+    register<Exec>("format") {
         group = "formatting"
         description = "Format markdown files"
-        doLast {
-            exec {
-                commandLine("sh", "scripts/format.sh")
-            }
-        }
+        commandLine("sh", "scripts/format.sh")
     }
     
-    register("verify") {
+    register<Exec>("verify") {
         group = "verification"
         description = "Verify plugin and run checks"
         dependsOn("verifyPlugin")
-        doLast {
-            exec {
-                commandLine("sh", "scripts/verify.sh")
-            }
-        }
+        commandLine("sh", "scripts/verify.sh")
     }
 }
