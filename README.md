@@ -111,12 +111,13 @@ make clean         # Clean build artifacts
 
 ## Compatibility
 
-- **IntelliJ IDEA 2019.1+** (tested across multiple versions from 2019.1 to latest)
+- **IntelliJ IDEA 2019.1+** (tested across multiple versions from 2019.1 to
+  latest)
 - All JetBrains IDEs (PyCharm, WebStorm, PhpStorm, etc.)
 
-The plugin is automatically tested for compatibility across multiple IDE versions
-before each release to ensure it works correctly on both older and newer
-versions of the platform.
+The plugin is automatically tested for compatibility across multiple IDE
+versions before each release to ensure it works correctly on both older and
+newer versions of the platform.
 
 ## Publishing to JetBrains Marketplace
 
