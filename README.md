@@ -1,5 +1,16 @@
 # codeSTACKr Theme for IntelliJ
 
+[![Version](https://img.shields.io/jetbrains/plugin/v/29007.svg?label=version)](https://plugins.jetbrains.com/plugin/29007-codestackr-theme)
+[![Downloads](https://img.shields.io/jetbrains/plugin/d/29007.svg)](https://plugins.jetbrains.com/plugin/29007-codestackr-theme)
+[![Rating](https://img.shields.io/jetbrains/plugin/r/rating/29007.svg)](https://plugins.jetbrains.com/plugin/29007-codestackr-theme)
+[![Visitors](https://visitor-badge.laobi.icu/badge?page_id=ranjan-mohanty.codestackr-intellij-theme)](https://github.com/ranjan-mohanty/codestackr-intellij-theme)
+[![Latest Release](https://img.shields.io/github/v/release/ranjan-mohanty/codestackr-intellij-theme?label=latest%20release)](https://github.com/ranjan-mohanty/codestackr-intellij-theme/releases/latest)
+[![Release Date](https://img.shields.io/github/release-date/ranjan-mohanty/codestackr-intellij-theme?label=released)](https://github.com/ranjan-mohanty/codestackr-intellij-theme/releases/latest)
+[![Build](https://img.shields.io/github/actions/workflow/status/ranjan-mohanty/codestackr-intellij-theme/release.yml?label=build)](https://github.com/ranjan-mohanty/codestackr-intellij-theme/actions)
+[![IntelliJ Platform](https://img.shields.io/badge/platform-IntelliJ%202023.2%2B-blue.svg)](https://plugins.jetbrains.com/plugin/29007-codestackr-theme)
+[![License](https://img.shields.io/github/license/ranjan-mohanty/codestackr-intellij-theme.svg)](LICENSE)
+[![GitHub Issues](https://img.shields.io/github/issues/ranjan-mohanty/codestackr-intellij-theme.svg)](https://github.com/ranjan-mohanty/codestackr-intellij-theme/issues)
+
 A beautiful dark theme for IntelliJ IDEA and other JetBrains IDEs, based on the
 popular
 [codeSTACKr VS Code theme](https://github.com/codestackr/codestackr-vscode-theme).
