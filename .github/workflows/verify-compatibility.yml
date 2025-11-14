@@ -1,0 +1,210 @@
+name: Verify Plugin Compatibility
+
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - 'v*'
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build Plugin
+    runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.properties.outputs.version }}
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Java 21
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'corretto'
+          java-version: '21'
+          cache: 'gradle'
+
+      - name: Export plugin properties
+        id: properties
+        shell: bash
+        run: |
+          PROPERTIES="$(./gradlew properties --console=plain -q)"
+          VERSION="$(echo "$PROPERTIES" | grep "^version:" | cut -f2- -d ' ')"
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+
+      - name: Build plugin
+        run: ./gradlew buildPlugin --no-daemon
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: plugin-compatibility
+          path: build/distributions/*.zip
+          retention-days: 1
+
+  verify:
+    name: Verify ${{ matrix.ide-version }}
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        # Test major versions from sinceBuild (2019.1) to current
+        # Using last patch release for each major version
+        # Update this list annually when new major versions release
+        ide-version: ['2019.1.4', '2020.3.4', '2021.3.3', '2022.3.3', '2023.3.8', '2024.3.7']
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Java 21
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'corretto'
+          java-version: '21'
+          cache: 'gradle'
+
+      - name: Download build artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: plugin-compatibility
+          path: build/distributions/
+
+      - name: Configure verification for ${{ matrix.ide-version }}
+        run: |
+          # Remove existing pluginVerification block and replace with specific version
+          sed -i '/pluginVerification {/,/^    }/d' build.gradle.kts
+          cat >> build.gradle.kts << 'EOF'
+          
+          intellijPlatform {
+              pluginVerification {
+                  ides {
+                      ide("IC", "${{ matrix.ide-version }}")
+                  }
+              }
+          }
+          EOF
+
+      - name: Verify compatibility
+        run: ./gradlew verifyPlugin --no-daemon
+
+      - name: Upload verification report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: report-${{ matrix.ide-version }}
+          path: build/reports/pluginVerifier/
+          retention-days: 30
+
+  verify-latest:
+    name: Verify Latest Stable
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    outputs:
+      latest-version: ${{ steps.latest.outputs.version }}
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Java 21
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'corretto'
+          java-version: '21'
+          cache: 'gradle'
+
+      - name: Download build artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: plugin-compatibility
+          path: build/distributions/
+
+      - name: Get latest IntelliJ version
+        id: latest
+        run: |
+          LATEST=$(curl -s "https://data.services.jetbrains.com/products/releases?code=IIC&latest=true&type=release" | \
+            python3 -c "import sys, json; data = json.load(sys.stdin); print(data['IIC'][0]['version'])")
+          echo "version=$LATEST" >> $GITHUB_OUTPUT
+          echo "Latest IntelliJ IDEA version: $LATEST"
+
+      - name: Configure verification for latest
+        run: |
+          # Remove existing pluginVerification block and replace with latest version
+          sed -i '/pluginVerification {/,/^    }/d' build.gradle.kts
+          cat >> build.gradle.kts << 'EOF'
+          
+          intellijPlatform {
+              pluginVerification {
+                  ides {
+                      // Test against the latest stable release
+                      ide("IC", "${{ steps.latest.outputs.version }}")
+                  }
+              }
+          }
+          EOF
+
+      - name: Verify compatibility
+        run: ./gradlew verifyPlugin --no-daemon
+
+      - name: Upload verification report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: report-latest-${{ steps.latest.outputs.version }}
+          path: build/reports/pluginVerifier/
+          retention-days: 30
+
+  summary:
+    name: Verification Summary
+    needs: [build, verify, verify-latest]
+    runs-on: ubuntu-latest
+    if: always()
+    
+    steps:
+      - name: Generate verification report
+        run: |
+          echo "# Plugin Compatibility Verification Report"
+          echo ""
+          echo "**Plugin:** codeSTACKr Theme v${{ needs.build.outputs.version }}"
+          echo "**Date:** $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
+          echo ""
+          echo "## Verification Results"
+          echo ""
+          echo "### Historical Versions (6 years backward compatibility)"
+          echo "| Version | Status |"
+          echo "|---------|--------|"
+          echo "| 2019.1.4 | ${{ needs.verify.result == 'success' && '✅ Compatible' || '❌ Failed' }} |"
+          echo "| 2020.3.4 | ${{ needs.verify.result == 'success' && '✅ Compatible' || '❌ Failed' }} |"
+          echo "| 2021.3.3 | ${{ needs.verify.result == 'success' && '✅ Compatible' || '❌ Failed' }} |"
+          echo "| 2022.3.3 | ${{ needs.verify.result == 'success' && '✅ Compatible' || '❌ Failed' }} |"
+          echo "| 2023.3.8 | ${{ needs.verify.result == 'success' && '✅ Compatible' || '❌ Failed' }} |"
+          echo "| 2024.3.7 | ${{ needs.verify.result == 'success' && '✅ Compatible' || '❌ Failed' }} |"
+          echo ""
+          echo "### Latest Stable Version"
+          echo "| Version | Status |"
+          echo "|---------|--------|"
+          echo "| ${{ needs.verify-latest.outputs.latest-version }} | ${{ needs.verify-latest.result == 'success' && '✅ Compatible' || '❌ Failed' }} |"
+          echo ""
+          echo "## Summary"
+          echo ""
+          if [[ "${{ needs.verify.result }}" == "success" && "${{ needs.verify-latest.result }}" == "success" ]]; then
+            echo "✅ **All verifications passed!** Plugin is compatible with all tested versions."
+          else
+            echo "⚠️ **Some verifications failed.** Check individual job logs for details."
+          fi
+          echo ""
+          echo "## Details"
+          echo "- **Build Status:** ${{ needs.build.result }}"
+          echo "- **Historical Versions:** ${{ needs.verify.result }}"
+          echo "- **Latest Version:** ${{ needs.verify-latest.result }}"
+          echo ""
+          echo "View detailed reports in the workflow artifacts."

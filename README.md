@@ -7,7 +7,7 @@
 [![Latest Release](https://img.shields.io/github/v/release/ranjan-mohanty/codestackr-intellij-theme?label=latest%20release)](https://github.com/ranjan-mohanty/codestackr-intellij-theme/releases/latest)
 [![Release Date](https://img.shields.io/github/release-date/ranjan-mohanty/codestackr-intellij-theme?label=released)](https://github.com/ranjan-mohanty/codestackr-intellij-theme/releases/latest)
 [![Build](https://img.shields.io/github/actions/workflow/status/ranjan-mohanty/codestackr-intellij-theme/release.yml?label=build)](https://github.com/ranjan-mohanty/codestackr-intellij-theme/actions)
-[![IntelliJ Platform](https://img.shields.io/badge/platform-IntelliJ%202023.2%2B-blue.svg)](https://plugins.jetbrains.com/plugin/29007-codestackr-theme)
+[![IntelliJ Platform](https://img.shields.io/badge/platform-IntelliJ%202019.1%2B-blue.svg)](https://plugins.jetbrains.com/plugin/29007-codestackr-theme)
 [![License](https://img.shields.io/github/license/ranjan-mohanty/codestackr-intellij-theme.svg)](LICENSE)
 [![GitHub Issues](https://img.shields.io/github/issues/ranjan-mohanty/codestackr-intellij-theme.svg)](https://github.com/ranjan-mohanty/codestackr-intellij-theme/issues)
 
@@ -57,19 +57,19 @@ popular
 
 ## Theme Variants
 
-| Variant           | Description                                                                                           |
-| ----------------- | ----------------------------------------------------------------------------------------------------- |
-| **Regular**       | The original vibrant color scheme with bold, saturated colors perfect for those who prefer high contrast. |
-| **Muted**         | A softer variant with more muted colors, ideal for extended coding sessions and reduced eye strain.  |
+| Variant           | Description                                                                                                           |
+| ----------------- | --------------------------------------------------------------------------------------------------------------------- |
+| **Regular**       | The original vibrant color scheme with bold, saturated colors perfect for those who prefer high contrast.             |
+| **Muted**         | A softer variant with more muted colors, ideal for extended coding sessions and reduced eye strain.                   |
 | **Light**         | A light theme variant for daytime coding with carefully adjusted colors for optimal readability on white backgrounds. |
-| **High Contrast** | A high contrast dark theme for better accessibility with maximum contrast between text and background. |
+| **High Contrast** | A high contrast dark theme for better accessibility with maximum contrast between text and background.                |
 
 ## Building from Source
 
 ### Prerequisites
 
-- JDK 17 or higher
-- Gradle 8.0 or higher
+- JDK 21 or higher
+- Gradle 9.2 or higher
 
 ### Build Steps
 
@@ -111,8 +111,12 @@ make clean         # Clean build artifacts
 
 ## Compatibility
 
-- IntelliJ IDEA 2023.2+
+- **IntelliJ IDEA 2019.1+** (tested across multiple versions from 2019.1 to latest)
 - All JetBrains IDEs (PyCharm, WebStorm, PhpStorm, etc.)
+
+The plugin is automatically tested for compatibility across multiple IDE versions
+before each release to ensure it works correctly on both older and newer
+versions of the platform.
 
 ## Publishing to JetBrains Marketplace
 

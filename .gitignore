@@ -7,10 +7,14 @@ gradle-*/
 
 # IntelliJ IDEA
 .idea/
+.intellijPlatform/
 *.iml
 *.iws
 *.ipr
 out/
+
+# VS Code
+.vscode
 
 # Node
 node_modules/
