@@ -11,20 +11,43 @@
 [![License](https://img.shields.io/github/license/ranjan-mohanty/codestackr-intellij-theme.svg)](LICENSE)
 [![GitHub Issues](https://img.shields.io/github/issues/ranjan-mohanty/codestackr-intellij-theme.svg)](https://github.com/ranjan-mohanty/codestackr-intellij-theme/issues)
 
-A beautiful dark theme for IntelliJ IDEA and other JetBrains IDEs, based on the
-popular
+A beautiful theme collection for IntelliJ IDEA and other JetBrains IDEs, based
+on the popular
 [codeSTACKr VS Code theme](https://github.com/codestackr/codestackr-vscode-theme).
+Now includes **Islands themes** for IntelliJ Platform 2025.3+!
 
 ## Features
 
+- **🏝️ Islands Themes**: Modern floating panel design with rounded corners
+  (IntelliJ 2025.3+)
+- **Eight Theme Variants**: 4 classic stable themes + 4 Islands variants
 - **Deep Dark Background**: Easy on the eyes with a carefully chosen dark
   background (#09131b)
 - **Vibrant Syntax Highlighting**: Carefully selected colors for optimal code
   readability
-- **Two Variants**: Choose between Regular and Muted color schemes
+- **Light Theme**: Perfect for daytime coding with optimized contrast
+- **High Contrast**: Enhanced accessibility with maximum contrast ratios
 - **Wide Language Support**: Optimized for Java, Kotlin, JavaScript, TypeScript,
   Python, HTML, CSS, JSON, Markdown, SQL, and more
 - **Consistent UI**: Matching UI colors throughout the IDE
+- **Future-Proof**: Compatible with IntelliJ IDEA 2019.1+ through all future
+  versions
+
+## Theme Variants
+
+### Classic Themes (Stable)
+
+- **codeSTACKr Theme**: Original dark theme
+- **codeSTACKr Muted**: Softer color palette
+- **codeSTACKr Light**: Light theme for daytime coding
+- **codeSTACKr High Contrast**: Maximum accessibility
+
+### Islands Themes (IntelliJ 2025.3+)
+
+- **codeSTACKr Islands Dark**: Dark theme with floating panels
+- **codeSTACKr Islands Muted**: Muted colors with Islands design
+- **codeSTACKr Islands Light**: Light theme with Islands design
+- **codeSTACKr Islands High Contrast**: High contrast with Islands design
 
 ## Screenshots
 
@@ -40,8 +63,9 @@ popular
 4. Click `Install`
 5. Restart the IDE
 6. Go to `Settings/Preferences` → `Appearance & Behavior` → `Appearance`
-7. Select "codeSTACKr Theme" or "codeSTACKr Theme (Muted)" from the Theme
-   dropdown
+7. Select your preferred theme from the dropdown:
+   - Classic themes: "codeSTACKr Theme", "codeSTACKr Light", etc.
+   - Islands themes: "codeSTACKr Islands Dark", "codeSTACKr Islands Light", etc.
 
 ### Manual Installation
 
@@ -54,15 +78,6 @@ popular
 6. Restart the IDE
 7. Go to `Settings/Preferences` → `Appearance & Behavior` → `Appearance`
 8. Select your preferred theme variant
-
-## Theme Variants
-
-| Variant           | Description                                                                                                           |
-| ----------------- | --------------------------------------------------------------------------------------------------------------------- |
-| **Regular**       | The original vibrant color scheme with bold, saturated colors perfect for those who prefer high contrast.             |
-| **Muted**         | A softer variant with more muted colors, ideal for extended coding sessions and reduced eye strain.                   |
-| **Light**         | A light theme variant for daytime coding with carefully adjusted colors for optimal readability on white backgrounds. |
-| **High Contrast** | A high contrast dark theme for better accessibility with maximum contrast between text and background.                |
 
 ## Building from Source
 

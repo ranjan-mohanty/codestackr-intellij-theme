@@ -1,8 +1,9 @@
 {
-  "name": "codeSTACKr High Contrast",
+  "name": "codeSTACKr Islands High Contrast",
   "dark": true,
   "author": "Ranjan Mohanty",
-  "editorScheme": "/themes/codestackr-theme-high-contrast.xml",
+  "editorScheme": "/themes/codestackr-high-contrast.xml",
+  "parentTheme": "Islands Dark",
   "ui": {
     "*": {
       "background": "#000000",
@@ -54,12 +55,15 @@
       "shortcutForeground": "#FFE400"
     },
     "EditorTabs": {
-      "background": "#1a1a1a",
+      "background": "#000000",
       "selectedBackground": "#000000",
       "selectedForeground": "#FFFFFF",
       "underlinedTabBackground": "#000000",
       "underlineColor": "#FFE400",
+      "underlinedBorderColor": "#FFE400",
       "inactiveUnderlineColor": "#c79600",
+      "inactiveUnderlinedTabBorderColor": "#c79600",
+      "inactiveUnderlinedTabBackground": "#000000",
       "hoverBackground": "#FFFFFF33"
     },
     "FileColor": {
@@ -145,7 +149,14 @@
     },
     "StatusBar": {
       "background": "#0a0a0a",
+      "borderColor": "#00000000",
       "hoverBackground": "#FFFFFF33"
+    },
+    "MainToolbar": {
+      "borderColor": "#00000000"
+    },
+    "MainWindow": {
+      "background": "#1a1a1a"
     },
     "TabbedPane": {
       "underlineColor": "#FFE400",
@@ -173,8 +184,12 @@
       "hoverBackground": "#FFFFFF33"
     },
     "ToolWindow": {
+      "background": "#000000",
+      "Stripe": {
+        "borderColor": "#00000000"
+      },
       "Header": {
-        "background": "#1a1a1a",
+        "background": "#000000",
         "inactiveBackground": "#000000"
       },
       "HeaderTab": {
@@ -186,6 +201,9 @@
         "hoverBackground": "#FFFFFF33",
         "selectedBackground": "#FF652F"
       }
+    },
+    "Island": {
+      "borderColor": "#000000"
     },
     "Tree": {
       "background": "#000000",

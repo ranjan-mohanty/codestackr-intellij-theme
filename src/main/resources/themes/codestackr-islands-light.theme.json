@@ -1,0 +1,254 @@
+{
+  "name": "codeSTACKr Islands Light",
+  "dark": false,
+  "author": "Ranjan Mohanty",
+  "editorScheme": "/themes/codestackr-light.xml",
+  "parentTheme": "Islands Light",
+  "ui": {
+    "*": {
+      "background": "#FFFFFF",
+      "foreground": "#000000",
+      "selectionBackground": "#FF652F80",
+      "selectionForeground": "#000000",
+      "selectionInactiveBackground": "#e0e0e0"
+    },
+    "ActionButton": {
+      "hoverBackground": "#f0f0f0",
+      "pressedBackground": "#FF652F80"
+    },
+    "Button": {
+      "default": {
+        "foreground": "#ffffff",
+        "startBackground": "#FF652F",
+        "endBackground": "#FF652F",
+        "startBorderColor": "#FF652F",
+        "endBorderColor": "#FF652F",
+        "focusedBorderColor": "#FF652F"
+      }
+    },
+    "ComboBox": {
+      "background": "#f5f5f5",
+      "selectionBackground": "#FF652F80",
+      "ArrowButton": {
+        "background": "#f5f5f5"
+      }
+    },
+    "CompletionPopup": {
+      "background": "#FFFFFF",
+      "selectionBackground": "#FF652F80"
+    },
+    "Component": {
+      "focusColor": "#FF652F",
+      "borderColor": "#d0d0d0",
+      "hoverIconColor": "#FF652F"
+    },
+    "Counter": {
+      "background": "#FF652F",
+      "foreground": "#ffffff"
+    },
+    "DebuggerTabs": {
+      "selectedBackground": "#FF652F80"
+    },
+    "Editor": {
+      "background": "#FFFFFF",
+      "foreground": "#000000",
+      "shortcutForeground": "#FF652F"
+    },
+    "EditorTabs": {
+      "background": "#FFFFFF",
+      "selectedBackground": "#FFFFFF",
+      "selectedForeground": "#000000",
+      "underlinedTabBackground": "#FFFFFF",
+      "underlineColor": "#FF652F",
+      "underlinedBorderColor": "#FF652F",
+      "inactiveUnderlineColor": "#ffb59a",
+      "inactiveUnderlinedTabBorderColor": "#ffb59a",
+      "inactiveUnderlinedTabBackground": "#FFFFFF",
+      "hoverBackground": "#f0f0f0"
+    },
+    "FileColor": {
+      "Blue": "#e3f2fd",
+      "Green": "#e8f5e9",
+      "Orange": "#fff3e0",
+      "Yellow": "#fffde7"
+    },
+    "Link": {
+      "activeForeground": "#FF652F",
+      "hoverForeground": "#FF652F",
+      "pressedForeground": "#d94d1f",
+      "visitedForeground": "#ff9746"
+    },
+    "List": {
+      "background": "#FFFFFF",
+      "selectionBackground": "#FF652F80",
+      "selectionForeground": "#000000",
+      "selectionInactiveBackground": "#e0e0e0",
+      "hoverBackground": "#f5f5f5"
+    },
+    "Menu": {
+      "background": "#FFFFFF",
+      "selectionBackground": "#FF652F80"
+    },
+    "Notification": {
+      "background": "#f5f5f5",
+      "errorBackground": "#ffebee",
+      "errorForeground": "#c62828",
+      "ToolWindow": {
+        "informativeBackground": "#e3f2fd",
+        "warningBackground": "#fff3e0"
+      }
+    },
+    "Panel": {
+      "background": "#f5f5f5"
+    },
+    "Plugins": {
+      "Button": {
+        "installForeground": "#ffffff",
+        "installBackground": "#FF652F",
+        "installBorderColor": "#FF652F",
+        "updateForeground": "#ffffff",
+        "updateBackground": "#14A76C"
+      },
+      "SearchField": {
+        "background": "#f5f5f5"
+      },
+      "SectionHeader": {
+        "background": "#eeeeee"
+      },
+      "Tab": {
+        "selectedBackground": "#FFFFFF",
+        "selectedForeground": "#1a1a1a",
+        "hoverBackground": "#f0f0f0"
+      }
+    },
+    "Popup": {
+      "background": "#FFFFFF",
+      "Header": {
+        "activeBackground": "#f5f5f5",
+        "inactiveBackground": "#FFFFFF"
+      }
+    },
+    "ProgressBar": {
+      "progressColor": "#FF652F",
+      "indeterminateStartColor": "#FF652F",
+      "indeterminateEndColor": "#FFE400"
+    },
+    "ScrollBar": {
+      "Transparent": {
+        "thumbColor": "#c0c0c0",
+        "thumbBorderColor": "#d0d0d0",
+        "hoverThumbColor": "#a0a0a0",
+        "hoverThumbBorderColor": "#b0b0b0"
+      }
+    },
+    "SearchEverywhere": {
+      "Tab": {
+        "selectedBackground": "#FF652F80",
+        "selectedForeground": "#1a1a1a"
+      }
+    },
+    "StatusBar": {
+      "background": "#f0f0f0",
+      "borderColor": "#00000000",
+      "hoverBackground": "#e0e0e0"
+    },
+    "MainToolbar": {
+      "borderColor": "#00000000"
+    },
+    "MainWindow": {
+      "background": "#f0f0f0"
+    },
+    "TabbedPane": {
+      "underlineColor": "#FF652F",
+      "hoverColor": "#f0f0f0",
+      "focusColor": "#FF652F"
+    },
+    "Table": {
+      "background": "#FFFFFF",
+      "selectionBackground": "#FF652F80",
+      "selectionForeground": "#1a1a1a",
+      "hoverBackground": "#f5f5f5"
+    },
+    "TextField": {
+      "background": "#f5f5f5",
+      "selectionBackground": "#FF652F80"
+    },
+    "ToggleButton": {
+      "onBackground": "#FF652F",
+      "onForeground": "#ffffff",
+      "offBackground": "#f5f5f5",
+      "offForeground": "#1a1a1a"
+    },
+    "ToolBar": {
+      "background": "#f5f5f5",
+      "hoverBackground": "#e0e0e0"
+    },
+    "ToolWindow": {
+      "background": "#FFFFFF",
+      "Stripe": {
+        "borderColor": "#00000000"
+      },
+      "Header": {
+        "background": "#FFFFFF",
+        "inactiveBackground": "#FFFFFF"
+      },
+      "HeaderTab": {
+        "selectedBackground": "#FF652F80",
+        "selectedInactiveBackground": "#e0e0e0",
+        "hoverBackground": "#f0f0f0"
+      },
+      "Button": {
+        "hoverBackground": "#f0f0f0",
+        "selectedBackground": "#FF652F80"
+      }
+    },
+    "Island": {
+      "borderColor": "#FFFFFF"
+    },
+    "Tree": {
+      "background": "#FFFFFF",
+      "selectionBackground": "#FF652F80",
+      "selectionForeground": "#1a1a1a",
+      "hoverBackground": "#f5f5f5"
+    },
+    "ValidationTooltip": {
+      "errorBackground": "#ffebee",
+      "errorBorderColor": "#FF652F",
+      "warningBackground": "#fff3e0",
+      "warningBorderColor": "#FFE400"
+    },
+    "VersionControl": {
+      "FileHistory": {
+        "Commit": {
+          "selectedBranchBackground": "#FF652F80"
+        }
+      },
+      "GitLog": {
+        "headIconColor": "#FF652F",
+        "localBranchIconColor": "#14A76C",
+        "remoteBranchIconColor": "#1976d2",
+        "tagIconColor": "#f57c00"
+      },
+      "Log": {
+        "Commit": {
+          "hoveredBackground": "#f5f5f5",
+          "currentBranchBackground": "#fff3e0"
+        }
+      },
+      "RefLabel": {
+        "foreground": "#1a1a1a",
+        "backgroundBase": "#f5f5f5"
+      }
+    },
+    "WelcomeScreen": {
+      "background": "#FFFFFF",
+      "borderColor": "#d0d0d0",
+      "separatorColor": "#d0d0d0",
+      "Projects": {
+        "background": "#f5f5f5",
+        "selectionBackground": "#FF652F80",
+        "selectionInactiveBackground": "#e0e0e0"
+      }
+    }
+  }
+}

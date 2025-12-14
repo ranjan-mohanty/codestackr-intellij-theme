@@ -5,15 +5,23 @@
 
     <description><![CDATA[
     <h1>codeSTACKr Theme for IntelliJ</h1>
-    <p>A beautiful theme collection with vibrant colors, perfect for long coding sessions.</p>
+    <p>A beautiful theme collection with vibrant colors, perfect for long coding sessions. Now includes Islands theme variants for IntelliJ Platform 2025.3+!</p>
     
     <h2>Features</h2>
     <ul>
-        <li>Four theme variants: Regular, Muted, Light, and High Contrast</li>
+        <li>🏝️ <strong>Islands Theme Support</strong>: Modern floating panel design with rounded corners (IntelliJ 2025.3+)</li>
+        <li>Eight theme variants: Regular, Muted, Light, High Contrast + Islands versions</li>
         <li>Vibrant syntax highlighting with carefully chosen colors</li>
         <li>Light theme for daytime coding</li>
         <li>High contrast theme for accessibility</li>
         <li>Optimized for Java, Kotlin, JavaScript, TypeScript, Python, and more</li>
+        <li>Compatible with IntelliJ IDEA 2019.1+ through all future versions</li>
+    </ul>
+    
+    <h2>Theme Variants</h2>
+    <ul>
+        <li><strong>Classic Themes</strong>: Original themes for all IntelliJ versions</li>
+        <li><strong>Islands Themes</strong>: Modern floating panel design for IntelliJ 2025.3+</li>
     </ul>
     
     <p>Never stop learning and Never give up!</p>
@@ -21,6 +29,15 @@
     ]]></description>
 
     <change-notes><![CDATA[
+    <h2>1.3.0</h2>
+    <ul>
+        <li>🏝️ <strong>New Islands Themes</strong>: Added 4 new theme variants with Islands theme support for IntelliJ Platform 2025.3+</li>
+        <li>✨ Modern floating panel design with rounded corners and improved visual separation (Islands themes)</li>
+        <li>🎨 Enhanced UI with transparent borders and optimized background colors (Islands themes)</li>
+        <li>📱 Updated tab design following the new Islands theme guidelines (Islands themes)</li>
+        <li>🔒 <strong>Original themes preserved</strong>: All existing themes remain unchanged for stability</li>
+        <li>🎯 <strong>8 total themes</strong>: 4 classic + 4 Islands variants</li>
+    </ul>
     <h2>1.2.0</h2>
     <ul>
         <li>Extended compatibility: Now supports IntelliJ IDEA 2019.1 through all future versions</li>
@@ -44,9 +61,13 @@
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <themeProvider id="com.codestackr.theme" path="/themes/codestackr-theme.theme.json"/>
-        <themeProvider id="com.codestackr.theme.muted" path="/themes/codestackr-theme-muted.theme.json"/>
-        <themeProvider id="com.codestackr.theme.light" path="/themes/codestackr-theme-light.theme.json"/>
-        <themeProvider id="com.codestackr.theme.highcontrast" path="/themes/codestackr-theme-high-contrast.theme.json"/>
+        <themeProvider id="com.codestackr.dark" path="/themes/codestackr-dark.theme.json"/>
+        <themeProvider id="com.codestackr.light" path="/themes/codestackr-light.theme.json"/>
+        <themeProvider id="com.codestackr.muted" path="/themes/codestackr-muted.theme.json"/>
+        <themeProvider id="com.codestackr.highcontrast" path="/themes/codestackr-high-contrast.theme.json"/>
+        <themeProvider id="com.codestackr.islands.dark" path="/themes/codestackr-islands-dark.theme.json"/>
+        <themeProvider id="com.codestackr.islands.light" path="/themes/codestackr-islands-light.theme.json"/>
+        <themeProvider id="com.codestackr.islands.muted" path="/themes/codestackr-islands-muted.theme.json"/>
+        <themeProvider id="com.codestackr.islands.highcontrast" path="/themes/codestackr-islands-high-contrast.theme.json"/>
     </extensions>
 </idea-plugin>

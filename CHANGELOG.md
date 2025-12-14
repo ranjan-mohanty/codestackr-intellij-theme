@@ -7,6 +7,40 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.3.0] - 2024-12-14
+
+### Added
+
+- **🏝️ Islands Theme Variants**: Added 4 new theme variants with Islands theme
+  support for IntelliJ Platform 2025.3+
+  - codeSTACKr Islands Dark
+  - codeSTACKr Islands Light
+  - codeSTACKr Islands Muted
+  - codeSTACKr Islands High Contrast
+- **Modern UI Design**: Islands themes feature floating panel design with
+  rounded corners and improved visual separation
+- **Enhanced Tab Design**: New Islands-style tab design with updated color
+  schemes
+- **8 Total Themes**: Now offering both classic stable themes and new Islands
+  variants
+
+### Changed
+
+- **Islands Theme Features** (Islands variants only):
+  - Hidden sidebar borders for seamless island appearance
+  - Updated main background colors with proper contrast ratios (1.20:1 minimum)
+  - Tool window backgrounds match editor background for consistency
+  - Islands-specific border colors and configurations
+
+### Technical
+
+- **Islands Themes**: Islands-specific features implemented in new variants
+  - Added `parentTheme` inheritance from "Islands Dark" and "Islands Light"
+  - Implemented new Islands tab color keys: `underlinedBorderColor`,
+    `inactiveUnderlinedTabBorderColor`, `inactiveUnderlinedTabBackground`
+  - Added `Island.borderColor` configuration for seamless panel integration
+  - Updated `EditorTabs.background` to match editor for unified appearance
+
 ## [1.2.0] - 2025-11-14
 
 ### Changed
@@ -71,6 +105,8 @@ and this project adheres to
 - Optimized for long coding sessions
 - Based on the popular VS Code theme by codeSTACKr
 
+[1.3.0]:
+  https://github.com/ranjan-mohanty/codestackr-intellij-theme/releases/tag/v1.3.0
 [1.2.0]:
   https://github.com/ranjan-mohanty/codestackr-intellij-theme/releases/tag/v1.2.0
 [1.1.0]:
