@@ -7,7 +7,7 @@
 [![Latest Release](https://img.shields.io/github/v/release/ranjan-mohanty/codestackr-intellij-theme?label=latest%20release)](https://github.com/ranjan-mohanty/codestackr-intellij-theme/releases/latest)
 [![Release Date](https://img.shields.io/github/release-date/ranjan-mohanty/codestackr-intellij-theme?label=released)](https://github.com/ranjan-mohanty/codestackr-intellij-theme/releases/latest)
 [![Build](https://img.shields.io/github/actions/workflow/status/ranjan-mohanty/codestackr-intellij-theme/release.yml?label=build)](https://github.com/ranjan-mohanty/codestackr-intellij-theme/actions)
-[![IntelliJ Platform](https://img.shields.io/badge/platform-IntelliJ%202019.1%2B-blue.svg)](https://plugins.jetbrains.com/plugin/29007-codestackr-theme)
+[![IntelliJ Platform](https://img.shields.io/badge/platform-IntelliJ%202019.3%2B-blue.svg)](https://plugins.jetbrains.com/plugin/29007-codestackr-theme)
 [![License](https://img.shields.io/github/license/ranjan-mohanty/codestackr-intellij-theme.svg)](LICENSE)
 [![GitHub Issues](https://img.shields.io/github/issues/ranjan-mohanty/codestackr-intellij-theme.svg)](https://github.com/ranjan-mohanty/codestackr-intellij-theme/issues)
 
@@ -30,7 +30,7 @@ Now includes **Islands themes** for IntelliJ Platform 2025.3+!
 - **Wide Language Support**: Optimized for Java, Kotlin, JavaScript, TypeScript,
   Python, HTML, CSS, JSON, Markdown, SQL, and more
 - **Consistent UI**: Matching UI colors throughout the IDE
-- **Future-Proof**: Compatible with IntelliJ IDEA 2019.1+ through all future
+- **Future-Proof**: Compatible with IntelliJ IDEA 2019.3+ through all future
   versions
 
 ## Theme Variants
@@ -126,7 +126,7 @@ make clean         # Clean build artifacts
 
 ## Compatibility
 
-- **IntelliJ IDEA 2019.1+** (tested across multiple versions from 2019.1 to
+- **IntelliJ IDEA 2019.3+** (tested across multiple versions from 2019.3 to
   latest)
 - All JetBrains IDEs (PyCharm, WebStorm, PhpStorm, etc.)
 

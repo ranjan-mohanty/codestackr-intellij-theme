@@ -30,7 +30,7 @@ intellijPlatform {
     
     pluginConfiguration {
         ideaVersion {
-            sinceBuild = "191"
+            sinceBuild = "193"
             untilBuild = provider { null }
         }
     }
@@ -58,7 +58,7 @@ intellijPlatform {
 // Configure IDE versions for compatibility testing
 // This is only used when explicitly running verifyPlugin with IDE downloads
 val compatibilityIdeVersions = listOf(
-    "2020.3", "2021.3", "2022.3", "2023.3"
+    "2019.3", "2020.3", "2021.3", "2022.3", "2023.3"
 )
 
 tasks {

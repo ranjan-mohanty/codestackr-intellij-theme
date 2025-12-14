@@ -26,6 +26,8 @@ and this project adheres to
 
 ### Changed
 
+- **Minimum Version Updated**: Minimum supported version changed from IntelliJ
+  IDEA 2019.1 to 2019.3 (build 193+)
 - **Islands Theme Features** (Islands variants only):
   - Hidden sidebar borders for seamless island appearance
   - Updated main background colors with proper contrast ratios (1.20:1 minimum)

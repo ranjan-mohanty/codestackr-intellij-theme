@@ -15,7 +15,7 @@
         <li>Light theme for daytime coding</li>
         <li>High contrast theme for accessibility</li>
         <li>Optimized for Java, Kotlin, JavaScript, TypeScript, Python, and more</li>
-        <li>Compatible with IntelliJ IDEA 2019.1+ through all future versions</li>
+        <li>Compatible with IntelliJ IDEA 2019.3+ through all future versions</li>
     </ul>
     
     <h2>Theme Variants</h2>
@@ -37,6 +37,7 @@
         <li>📱 Updated tab design following the new Islands theme guidelines (Islands themes)</li>
         <li>🔒 <strong>Original themes preserved</strong>: All existing themes remain unchanged for stability</li>
         <li>🎯 <strong>8 total themes</strong>: 4 classic + 4 Islands variants</li>
+        <li>📋 <strong>Minimum version updated</strong>: Now requires IntelliJ IDEA 2019.3+ (build 193+)</li>
     </ul>
     <h2>1.2.0</h2>
     <ul>
